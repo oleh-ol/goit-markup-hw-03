@@ -4,14 +4,43 @@ body {
     background-color: #ffffff;
     color: #434455
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+button {
+    cursor: pointer;
+}
 .list {
     list-style-type: none;
 }
 .link {
     text-decoration: none;
 }
+.container {
+    display: flex;
+
+    max-width: 1158;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Heder stiles */
+
 .header {
     background-color: #FFF;
+}
+
+.header-nav {
+    display: flex;
 }
 .logo {
     color: #4D5AE5;
@@ -21,37 +50,56 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: block;
+    padding: 24px 0;
+    margin-right: 76px;
 }
 .logo-span {
     color: #2E2F42;
 }
-.nav-menu-item {
+.nav-menu {
+    display: flex;
+}
+.nav-menu-item + .nav-menu-item {
+    margin-left: 40px;
+}
+.nav-menu-item-link {
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
 }
-.nav-menu-item:hover,
-.nav-menu-item:focus {
+.nav-menu-item-link:hover,
+.nav-menu-item-link:focus {
     color: #404BBF;
 }
 .address {
 font-style: normal;
 }
-.address-list-item {
+.address-list {
+    display: flex;
+}
+.address-list-item + .address-list-item {
+    margin-left: 40px;
+}
+.address-list-item-link {
     color: #434455;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
 }
-.address-list-item:hover,
-.address-list-item:focus {
+.address-list-item-link:hover,
+.address-list-item-link:focus {
     color: #404BBF;
 }
 
-.address-list-item:visited {
+.address-list-item-link:visited {
     color: #434455;
 }
 /* Hero Section */
