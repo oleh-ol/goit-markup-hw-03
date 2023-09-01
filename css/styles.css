@@ -40,10 +40,12 @@ button {
 }
 .header {
     background-color: #fff;
+    border-bottom: 1px solid #e7e9fc;
 }
 
-.nav-container {
+.header-nav {
     display: flex;
+    align-items: center;
 }
 .logo {
     color: #4D5AE5;
